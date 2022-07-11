@@ -1,0 +1,114 @@
+---
+#Underwater noise registery data for He569
+general:             #Mandatory; Group; General information for noise registery
+  #Output name for hdf5
+  out_name: 'He569_MarinEARS_Data.hdf5'
+  
+  #Input of nmea nav => RMC required
+  navdirectory: '../Data/NAV-Heincke-Bridge/'
+  
+  #Excel profilelist
+  profilelist: '../Data/Protocol/HE569-ProfileList_Germany.xls'
+  
+  #Mandatory, string, Creator of he hdf5 file/ who holds responsibility for data QA and creation of the submitted hdf5 file 
+  author:                  'Nikolas Roemer-Stange'
+  
+  #Optional, string
+  comment:                 'PI Dr Hanno Keil'
+  
+  #Mandatory, string, Name of thejourney'
+  journey_name:            'He569'
+  
+  #Mandatory, string, Descriptionfor what purpose the journey was made
+  measurement_purpose:  > 
+    'Scientific research:
+    The repeated glacial-interglaial reshaping of the Quaternary landscape of the south-eastern North Sea resulted
+    in a complex stratigraphy wit large-scale to small-scale morphological structures. Intense commercial acoustic 
+    surveying during the last decdes established a valuable data base of the Pleistocene facies in deeper strata, however,
+    a good understanding of the uper ~100 m of the sediments is still lacking. Based on findings from HE405 and HE463 we aim
+    to investigate three objectivs during He569: (1) understanding on a larger scale the interplay between Pleistocene
+    glacial and interglacial perids in the south-eastern North Sea and related small scaled structural patterns,
+    (2) testing the controversialy discussed late Weichselian ice-dammed lake hypothesis in the context of the Elbe Paleovalley, and
+    (3) analysing eastern Dogger ank drainage systems and their relation to the Elbe Paleovalley.
+    The studies are carried out i close cooperation with the University of Aarhus (Prof. Katrine Andreesen).'
+  
+  #Mandatory, string
+  measuring_institution: 'University of Bremen, Bremen (Germany)'
+  
+  #Mandatory, string
+  point_of_contact:      'hanno.keil@uni-bremen.de' 
+  
+airguns:             #Optional;  Group; To be filled in when used, zero count when no airgun was used
+  #Mandatory, integer
+  airgun_count: 1
+  
+  #First airgun configuration
+  airgun_1:
+    #Source Identifier
+    ident: SercelMicroGI_SN4199_130bar
+    
+    #Mandatory, float, pulse rate[Hz]
+    pulse_rate: 0.4 
+    
+    #Segy-file to determine max_sgnal_length, frequency_min_observed, frequency_max_observed, frequency_spectrum
+    example_file: 'GeoB21-023-MicroGIExample.sgy'
+    
+    #Optional, string
+    comment: ' '
+
+
+boomer:              #Optional;  Group; To be filled in when used, zero count when no airgun was used
+  #Mandatory, integer
+  boomer_count: 1
+  
+  #First boomer configuration
+  boomer_1:
+    #Source Identifier
+    ident: AppliedAcousticsBoomer_AA301_200J
+    
+    #Mandatory, float, pulse rate[Hz]
+    pulse_rate: 4
+    
+    #Segy-file to determine max_sgnal_length, frequency_min_observed, frequency_max_observed, frequency_spectrum
+    example_file: 'GeoB21-007b-BoomerExample.sgy'
+    
+    #Optional, string
+    comment: ' '
+
+
+sparker:             #Optional;  Group; To be filled in when used, zero count when no airgun was used
+  #Mandatory, integer
+  sparker_count: 1
+  
+  #First sparker configuration
+  sparker_1:
+    #Source Identifier
+    ident: AppliedAcousticsSparker_NA_1750J
+    
+    #Mandatory, float, pulse rate[Hz]
+    pulse_rate: 0.4
+    
+    #Segy-file to determine max_sgnal_length, frequency_min_observed, frequency_max_observed, frequency_spectrum
+    example_file: 'GeoB21-023SparkerExample.sgy'
+    
+    #Optional, string
+    comment: ' '  
+
+
+sub_bottom_prifiler: #Optional;  Group; To be filled in when used, zero count when no airgun was used
+  #Mandatory, integer
+  sbp_count: 1
+  
+  #First sbp configuration
+  sbp_1:
+    #Source Identifier
+    ident: SES2000medium_Heincke
+    
+    #Mandatory, float, pulse rate[Hz]
+    pulse_rate: 8
+    
+    #Segy-file to determine max_sgnal_length, frequency_min_observed, frequency_max_observed, frequency_spectrum
+    example_file: 'GeoB21-007b-SESExample.sgy'
+    
+    #Optional, string
+    comment: ' '

@@ -1,0 +1,19 @@
+---
+SES2000medium_Heincke:  
+  #Optional, float, half-power beam width [deg]
+  beam_width: 1.0
+  
+  #Mandatory, string    
+  manufacturer: 'Innomar' 
+  
+  #Optional, string
+  name: 'SES 2000 medium' 
+  
+  #Mandatory, float, Maximum electric energy [J]
+  electric_energy_max: 6500
+
+  #Optional, string, Serial number of airgun
+  serial_number:  'Na'
+  
+  #Mandatory, float, Depth of airgun below the water surface [m]
+  source_depth: 4

@@ -1,0 +1,20 @@
+---
+AppliedAcousticsSparker_NA_1750J:  
+  #Optional, float, half-power beam widht [deg]
+  beam_width: 
+  
+  #Mandatory, string    
+  manufacturer: 'Applied Acoustics' 
+  
+  #Optional, string
+  name: 'Dura Spark UHD 400' 
+  
+  #Mandatory, float, Maximum electric energy [J]
+  electric_energy_max: 1750
+  
+  #Optional, string, Serial number of airgun
+  serial_number: 'NA'
+  
+  #Mandatory, float, Depth of airgun below the water surface [m]
+  source_depth: 0.3
+ 

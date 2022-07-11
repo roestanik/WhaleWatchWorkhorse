@@ -1,0 +1,76 @@
+---
+#Marine mammal group-specific auditory weighting function and TTS exposure function parameters. 
+#Note that function parameter K for the LF and SI groups was estimated using TTS-onset data 
+#extrapolated from individuals in other marine mammal groups tested in water.
+
+LF:
+  f1: 0.20
+  f2: 19
+  a:  1
+  B:  2
+  K:  179
+  R2: 
+  C:  0.13
+  
+HF:
+  f1: 8.8
+  f2: 110
+  a:  1.6
+  B:  2
+  K:  177
+  R2: 0.825
+  C:  1.20
+
+VHF:
+  f1: 12
+  f2: 140
+  a:  1.8
+  B:  2
+  K:  152
+  R2: 0.864
+  C:  1.36
+
+SI:
+  f1: 4.3
+  f2: 25
+  a:  1.8
+  B:  2
+  K:  183
+  R2: 
+  C:  2.62
+
+PCW:
+  f1: 1.9
+  f2: 30
+  a:  1
+  B:  2
+  K:  180
+  R2: 
+  C:  0.75
+
+OCW:
+  f1: 0.94
+  f2: 25
+  a:  2
+  B:  2
+  K:  198
+  R2: 0.557
+  C:  0.64
+
+PCA:
+  f1: 0.75
+  f2: 8.3
+  a:  2
+  B:  2
+  K:  132
+  R2: 
+  C:  1.50
+
+OCA:
+  f1: 2.0
+  f2: 20
+  a:  1.4
+  B:  2
+  K:  156
+  R2: 
+  C:  1.39
