@@ -1,0 +1,22 @@
+---
+AppliedAcousticsBoomer_AA301_200J:  
+  #Optional, float, half-power beam widht [deg]
+  beam_width: 
+  
+  #Mandatory, string    
+  manufacturer: 'Applied Acoustics' 
+  
+  #Optional, string
+  name: 'AA301' 
+  
+  #Mandatory, float, Maximum electric energy [J]
+  electric_energy_max: 200
+  
+  #Mandatory, float, Area of the boomer plate [m^2]
+  plate_area: 0.3
+  
+  #Optional, string, Serial number of airgun
+  serial_number: 'Na'
+  
+  #Mandatory, float, Depth of airgun below the water surface [m]
+  source_depth: 0.2

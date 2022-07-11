@@ -1,0 +1,22 @@
+---
+#Plotting defaults Seismics
+fminplot   : 0.1
+fmaxplot   : 700000
+fsteppllot : 500
+
+distmin    : 1.0
+distmax    : 2000.0
+distste    : 1.0
+
+seldistmin : 1.0
+seldistmax : 52.0
+seldistste : 1.0
+
+#Plotting defaults Hydroacoustics
+hydro_seldistmin : 1.0
+hydro_seldistmax : 1500.0
+hydro_seldistste : 5.0
+
+hydro_beamx      : 50.0
+hydro_beamy      : 50.0
+hydro_beamdx     : 1.0
