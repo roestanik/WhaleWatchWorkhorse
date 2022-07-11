@@ -1,0 +1,18 @@
+### Gitignore file ###
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+### Result files ####
+*.pdf
+!Post_Reporting/2021_09_24_data_requirements_for_seismic_surveys.pdf
+*.png
+*.tex
+*ICES_CoordinatesDate.txt
+*.qgz
+*.hdf5
