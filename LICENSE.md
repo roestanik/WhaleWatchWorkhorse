@@ -9,32 +9,53 @@ Python core package.
 
 ### h5py
 Name: h5py
+
 Version: 2.10.0
+
 Summary: Read and write HDF5 files from Python
+
 Home-page: http://www.h5py.org
+
 Author: Andrew Collette
+
 Author-email: andrew.collette@gmail.com
+
 License: BSD
+
 Requires: six, numpy
 
 ### matplotlib
 Name: matplotlib
+
 Version: 3.4.3
+
 Summary: Python plotting package
+
 Home-page: https://matplotlib.org
+
 Author: John D. Hunter, Michael Droettboom
+
 Author-email: matplotlib-users@python.org
+
 License: PSF
+
 Requires: pyparsing, pillow, cycler, kiwisolver, python-dateutil, numpy
 
 ### numpy
 Name: numpy
+
 Version: 1.20.1
+
 Summary: NumPy is the fundamental package for array computing with Python.
+
 Home-page: https://www.numpy.org
+
 Author: Travis E. Oliphant et al.
+
 Author-email: None
+
 License: BSD
+
 Requires:
 
 ### os
@@ -42,12 +63,19 @@ Python core package.
 
 ### pandas
 Name: pandas
+
 Version: 1.2.4
+
 Summary: Powerful data structures for data analysis, time series, and statistics
+
 Home-page: https://pandas.pydata.org
+
 Author: None
+
 Author-email: None
+
 License: BSD
+
 Requires: pytz, numpy, python-dateutil
 
 ### pathlib
@@ -55,42 +83,70 @@ Python core package.
 
 ### pynmea2
 Name: pynmea2
+
 Version: 1.18.0
+
 Summary: Python library for the NMEA 0183 protcol
+
 Home-page: https://github.com/Knio/pynmea2
+
 Author: Tom Flanagan
+
 Author-email: tom@zkpq.ca
+
 License: MIT
+
 Requires:
 
 ### pylatex
 Name: PyLaTeX
+
 Version: 1.4.1
+
 Summary: A Python library for creating LaTeX files and snippets
+
 Home-page: https://github.com/JelteF/PyLaTeX
+
 Author: Jelte Fennema
+
 Author-email: pylatex@jeltef.nl
+
 License: MIT
+
 Requires: ordered-set
 
 ### scipy
 Name: scipy
+
 Version: 1.6.2
+
 Summary: SciPy: Scientific Library for Python
+
 Home-page: https://www.scipy.org
+
 Author: None
+
 Author-email: None
+
 License: BSD
+
 Requires: numpy
 
 ### segysak
 Name: segysak
+
 Version: 0.3.3
+
 Summary: SEG-Y Seismic Data Inspection and Manipulation Tools using Xarray
+
 Home-page: https://github.com/trhallam/segysak
+
 Author: SEGY-SAK Developers
+
 Author-email: segysak@gamil.com
+
 License: GPL3
+
 Requires: click, xarray, dask, numpy, more-itertools, scipy, addict, distributed, h5netcdf, setuptools-scm, segyio, tqdm, pandas
 
 ### yaml

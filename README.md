@@ -72,6 +72,9 @@ GPL3, see LICENSE-file
 
 ## Contact
 M.Sc. Nikolas Römer-Stange
+
 PhD Candidate
+
 Marine Technology and Environmental Research Working Group
+
 Department of Earth Sciences, Bremen University 
