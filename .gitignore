@@ -9,10 +9,10 @@ __pycache__/
 
 
 ### Result files ####
-*.pdf
-!Post_Reporting/2021_09_24_data_requirements_for_seismic_surveys.pdf
-*.png
-*.tex
-*ICES_CoordinatesDate.txt
-*.qgz
-*.hdf5
+#*.pdf
+#!Post_Reporting/2021_09_24_data_requirements_for_seismic_surveys.pdf
+#*.png
+#*.tex
+#*ICES_CoordinatesDate.txt
+#*.qgz
+#*.hdf5

@@ -37,8 +37,8 @@ import matplotlib.pyplot as plt
 # plt.close('all')
 
 # # Micro-GI
-#yaml_file = "Seismics_Paremeters_SercelMicroGI_VHF.yaml"
-#rep.GenerateReport(yaml_file)
+yaml_file = "Seismics_Paremeters_SercelMicroGI_VHF.yaml"
+rep.GenerateReport(yaml_file)
 # yaml_file = "Seismics_Paremeters_SercelMicroGI_PIW.yaml"
 # rep.GenerateReport(yaml_file)
 # yaml_file = "Seismics_Paremeters_SercelMicroGI_Fish.yaml"
@@ -67,10 +67,10 @@ import matplotlib.pyplot as plt
 
 
 # # # SES 2000 medium
-yaml_file = "SingleBeam_Parameters_InnomarSES2000compact_VHF_Kathrine.yaml"
-rep.SingleBeamReport(yaml_file)
-yaml_file = "SingleBeam_Parameters_InnomarSES2000compact_PIW_Kathrine.yaml"
-rep.SingleBeamReport(yaml_file)
+#yaml_file = "SingleBeam_Parameters_InnomarSES2000compact_VHF_Kathrine.yaml"
+#rep.SingleBeamReport(yaml_file)
+#yaml_file = "SingleBeam_Parameters_InnomarSES2000compact_PIW_Kathrine.yaml"
+#rep.SingleBeamReport(yaml_file)
 #yaml_file = "SingleBeam_Parameters_InnomarSES2000_Fish.yaml"
 #rep.SingleBeamReport(yaml_file)
 #plt.close('all')

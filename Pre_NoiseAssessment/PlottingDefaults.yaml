@@ -5,7 +5,7 @@ fmaxplot   : 700000
 fsteppllot : 500
 
 distmin    : 1.0
-distmax    : 100.0
+distmax    : 2000.0
 distste    : 0.5
 
 seldistmin : 0.1

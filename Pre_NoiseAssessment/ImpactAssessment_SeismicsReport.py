@@ -122,9 +122,7 @@ def GenerateReport(yaml_file):
         header.append(now.strftime("%Y-%m-%d"))
         
     with header.create(Head("R")):
-        header.append("University of Bremen")
-        header.append(LineBreak())
-        header.append('Marine Technology / Environmental Research')
+        header.append("Whale Watch Workhorse")
         
     with header.create(Foot("C")):
         header.append(simple_page_number())
