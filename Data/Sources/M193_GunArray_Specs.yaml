@@ -1,0 +1,25 @@
+---
+M193_GunArray:
+  #Optional, float, half-power beam widht [deg]
+  beam_width: 140 
+  
+  #Mandatory, string    
+  manufacturer: 'Sercel' 
+  
+  #Optional, string
+  name: 'Gun Array M193' 
+  
+  #Optional, string, Serial number of airgun
+  serial_number: '-' 
+  
+  #Mandatory, float, Operating pressure [bar]
+  pressure: 130 
+  
+  #Mandatory, float, Depth of airgun below the water surface [m]
+  source_depth: 0.7 
+  
+  #Mandatory, float, Air chamber volume of generator [Liter]
+  volume_generator: 0.1
+  
+  #Optional, float, Air chamber volume of injector [Liter]
+  volume_injector: 0.1   

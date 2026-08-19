@@ -1,0 +1,14 @@
+HF ceateans: 150 Hz - 160 kHz
+LF ceateans: 7 Hz - 35 kHz
+Fishes: 30 - 1000 Hz
+Turtles: 50 - 1000 Hz
+Elasmobranches: 50-1000 Hz
+humans: 20-20000 Hz
+
+Ship speed: 5.5 kn
+shot interval: ca. 7 sec.
+
+array: sercel mini and standard GI gun (siehe Gundalf Modellierung)
+
+Topography: Al_Wajh_bathy.dat  xyz-ascii (UTM 37N - WGS84)
+

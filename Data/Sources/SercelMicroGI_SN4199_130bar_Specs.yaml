@@ -12,6 +12,13 @@ SercelMicroGI_SN4199_130bar:
   #Optional, string, Serial number of airgun
   serial_number: '4199' 
   
+  #Mandatory, float, Tow Depth [m]
+  towdepth: 0.7 
+  
+  #Mandatory, float, Dominant Frequency [Hz]
+  fd: 440
+  
+  
   #Mandatory, float, Operating pressure [bar]
   pressure: 130 
   

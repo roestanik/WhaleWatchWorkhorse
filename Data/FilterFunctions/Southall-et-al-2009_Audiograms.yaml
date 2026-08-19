@@ -58,6 +58,28 @@ EstimatedAudiogram:
     B:  2.76
     R2: 0.978
     
+  ST:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
+  Fish:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
+  Human:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
+    
 #Normalized estimated group audiogram parameters values determined by the best fit of Equation (1) 
 #for marine mammal groups based on directly measured behavioral hearing thresholds
 NormalizedAudiogram:
@@ -116,4 +138,25 @@ NormalizedAudiogram:
     A:  54.9
     B:  2.91
     R2: 0.968
+  ST:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
+  Fish:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
+  Human:
+    T0: .NaN
+    F1: .NaN
+    F2: .NaN
+    A:  .NaN
+    B:  .NaN
+    R2: .NaN
     

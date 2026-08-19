@@ -1,0 +1,33 @@
+---
+#Sounder Parameters P70
+name             : 'P70 Parasound'
+SPL              : 245
+phi              : 4.5
+dtheta           : 5
+sigdur           : 0.00025
+f                : 18000
+towingdepth      : 4
+
+#General settings
+group            : VHF #Functional hearing group
+
+#Parameters for the geometric spreading approximation
+spreading        : 'ShallowWater' #Spherical,ShallowWater,Elmer,Cylindrical
+spreading_dBred  : 14 #Variable for custom geometric spreading function
+spreading_wd     : 300 #Water depth for shallow water geometric spreading function
+spreading_safety : -6.6 #Safety threshold for shallow water geometric spreading function
+
+kraken_count     : 0 #Number of KRAKEN models to read in :> 0 for no models
+kraken_model     : ['Clay200Hz','Sand200Hz','Gravel200Hz'] #Name of the models
+kraken_depth     : 5 #Depth to consider in the KRAKEN models
+kraken_selection : 0 #Which Kraken model to use, if it is used for spreading
+
+#Absorption model
+abs_model        : 'North' #Baltic,North,Pacific,Red,Arctic,Custom
+
+#Cummulative SEL calculation parameters
+profile_dur      : 2.0 #Profile duration [h]
+profile_spd      : 5.0  #Profile speed [kn]
+profile_sf       : 3.0 #Shooting frequency [Hz]
+
+

@@ -1,7 +1,7 @@
 # WhaleWatchWorkhorse
 
 ## Workhorse
-Noun, a person who does a lot of work, especially of a type that is necessary but not interesting. (Cambridge Advanced Learner's Dictionary & Thesaurus)
+Noun, a person who does a lot of work, especially of a type that is necessary... (Cambridge Advanced Learner's Dictionary & Thesaurus)
 
 ## What is the WhaleWatchWorkhorse?
 The WhaleWatchWorkhorse is a collection of PYTHON (driver-) scripts and functions as well as some data.

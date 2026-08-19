@@ -484,6 +484,85 @@ def WriteTransects(hf,navdirectory,profilelist,source_name,source_SPL):
     hftrans.create_dataset('ICES_SubRectangles_Airgun',data=unique_ices_airgun)
     hftrans.create_dataset('ICES_SubRectangles_Other',data=unique_ices_other)
       
+def WriteTransects_Denmark(navdirectory,profilelist,source_name,source_SPL):
+        
+    #Import the NMEA record of the cruise
+    nav = ImportNMEA(navdirectory)
+    
+    #Import the EXCEL profilelist
+    df = pandas.read_excel(profilelist)
+    FORMAT = df.columns
+    table = df[FORMAT]
+
+    
+    #Initialize ICES Subrectangles record
+    ices_airgun_edukt = np.zeros((1,4),dtype=float)
+    ices_other_edukt  = np.zeros((1,4),dtype=float)
+    
+    
+    #Loop through transects
+    for ind,step in enumerate(table['Name']):
+        #General info of every transect
+        
+        #Positioning and timing of every transect
+        mintime=table['StartTime'][ind].to_pydatetime().timestamp()
+        maxtime=table['EndTime'][ind].to_pydatetime().timestamp()
+        mask = ((nav[:,0]>=mintime)&(nav[:,0]<=maxtime))
+        
+        #Create temporary variable for max spl values on profiles
+        airgun_max_spl = 0
+        other_max_spl  = 0
+    
+       
+        #print(other_max_spl)
+        #safe into an array to safe preliminary info for ices subrectangle record
+        temp = np.append(nav[mask,:],airgun_max_spl*np.ones((np.sum(mask),1),dtype=float),axis=1)
+        ices_airgun_edukt = np.append(ices_airgun_edukt,temp,axis=0)
+        temp = np.append(nav[mask,:],other_max_spl*np.ones((np.sum(mask),1),dtype=float),axis=1)
+        ices_other_edukt  = np.append(ices_other_edukt,temp,axis=0)
+        del temp
+                    
+    
+    
+    ices_airgun_edukt = np.delete(ices_airgun_edukt,0,0)
+    ices_other_edukt = np.delete(ices_other_edukt,0,0)
+    
+    ices_airgun = np.zeros((ices_airgun_edukt.shape[0],3),dtype='|S10')
+    ices_other = np.zeros((ices_other_edukt.shape[0],3),dtype='|S10')
+    
+    #Check file for GIS Import
+    gischeck       = open('Airgun_ICES_CoordinatesDate.txt',"w") # Output
+    gischeck_o     = open('Other_ICES_CoordinatesDate.txt',"w") # Output
+    
+    for posind,posstep in enumerate(ices_airgun_edukt[:,0]):
+        if ices_airgun_edukt[posind,3] > 0.0:
+            ices_airgun[posind,0] = datetime.datetime.strftime(\
+                 datetime.datetime.fromtimestamp(posstep),'%Y-%m-%d')
+            ices_airgun[posind,1] = IcesSubtRect(\
+                 ices_airgun_edukt[posind,1],ices_airgun_edukt[posind,2])
+            ices_airgun[posind,2] = AirgunLoudness(\
+                 ices_airgun_edukt[posind,3])
+            gischeck.write(datetime.datetime.strftime(\
+                 datetime.datetime.fromtimestamp(posstep),'%Y-%m-%d %H:%M')+'\t'+\
+                 str(ices_airgun_edukt[posind,1])+'\t'+str(ices_airgun_edukt[posind,2])+'\t'+\
+                 IcesSubtRect(ices_airgun_edukt[posind,1],ices_airgun_edukt[posind,2])+'\t'+\
+                 str(ices_airgun_edukt[posind,3])+'\n')
+        if ices_other_edukt[posind,3] >0.0:    
+            ices_other[posind,0] = datetime.datetime.strftime(\
+                 datetime.datetime.fromtimestamp(ices_other_edukt[posind,0]),'%Y-%m-%d')
+            ices_other[posind,1] = IcesSubtRect(\
+                 ices_other_edukt[posind,1],ices_other_edukt[posind,2])
+            ices_other[posind,2] = OtherLoudness(\
+                 ices_other_edukt[posind,3])
+            gischeck_o.write(datetime.datetime.strftime(\
+                 datetime.datetime.fromtimestamp(posstep),'%Y-%m-%d %H:%M')+'\t'+\
+                 str(ices_other_edukt[posind,1])+'\t'+str(ices_other_edukt[posind,2])+'\t'+\
+                 IcesSubtRect(ices_other_edukt[posind,1],ices_other_edukt[posind,2])+'\t'+\
+                 str(ices_other_edukt[posind,3])+'\n')
+        
+    gischeck.close()
+    gischeck_o.close()
+    
     
 #%% Wrapper Function
 def MarineEarsReport(configfile):

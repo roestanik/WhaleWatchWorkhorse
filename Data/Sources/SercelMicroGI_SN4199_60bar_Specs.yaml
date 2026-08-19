@@ -1,0 +1,32 @@
+---
+SercelMicroGI_SN4199_60bar:
+  #Optional, float, half-power beam widht [deg]
+  beam_width: 140 
+  
+  #Mandatory, string    
+  manufacturer: 'Sercel' 
+  
+  #Optional, string
+  name: 'Micro-GI Air Gun (60 bar)' 
+  
+  #Optional, string, Serial number of airgun
+  serial_number: '4199' 
+  
+  #Mandatory, float, Tow Depth [m]
+  towdepth: 0.7 
+  
+  #Mandatory, float, Dominant Frequency [Hz]
+  fd: 440
+  
+  
+  #Mandatory, float, Operating pressure [bar]
+  pressure: 60 
+  
+  #Mandatory, float, Depth of airgun below the water surface [m]
+  source_depth: 0.7 
+  
+  #Mandatory, float, Air chamber volume of generator [Liter]
+  volume_generator: 0.1
+  
+  #Optional, float, Air chamber volume of injector [Liter]
+  volume_injector: 0.1   

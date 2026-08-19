@@ -12,9 +12,15 @@ AppliedAcousticsSparker_NA_1750J:
   #Mandatory, float, Maximum electric energy [J]
   electric_energy_max: 1750
   
+  #Mandatory, float, Tow Depth [m]
+  towdepth: 0.45 
+  
+  #Mandatory, float, Dominant Frequency [Hz]
+  fd: 1000
+  
   #Optional, string, Serial number of airgun
   serial_number: 'NA'
   
   #Mandatory, float, Depth of airgun below the water surface [m]
-  source_depth: 0.3
+  source_depth: 0.15
  

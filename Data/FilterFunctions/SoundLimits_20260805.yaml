@@ -1,0 +1,124 @@
+---
+Description:
+  Fish: Fishes with and without swim bladder
+  LF: >
+    Low-Frequency (LF) Cetaceans including Balaenidae (Balaena, Eubalaenidae spp.); 
+    Balaenopteridae (Balaenoptera physalus, B. musculus); Balaenopteridae (Balaenoptera acutorostrata,
+    B. bonaerensis, B. borealis, B. edeni, B. omurai; Megaptera novaeangliae);
+    Neobalenidae (Caperea); Eschrichtiidae (Eschrichtius)
+  HF: >
+    High-Frequency (HF) Cetaceans including Physeteridae (Physeter); Ziphiidae (Berardius spp.,
+    Hyperoodon spp., Indopacetus, Mesoplodon spp., Tasmacetus, Ziphius); Delphinidae (Orcinus);
+    Delphinidae (Delphinus, Feresa, Globicephala spp., Grampus, Lagenodelphis, Lagenorhynchus acutus,
+    L. albirostris, L. obliquidens, L. obscurus, Lissodelphis spp., Orcaella spp., Peponocephala,
+    Pseudorca, Sotalia spp., Sousa spp., Stenella spp., Steno, Tursiops spp.); Montodontidae
+    (Delphinapterus, Monodon); Plantanistidae (Plantanista)
+  VHF: >
+    Very High-frequency (VHF) Cetaceans including Delphinidae (Cephalorhynchus spp.;
+    Lagenorhynchus cruciger, L. austrailis); Phocoenidae (Neophocaena spp., Phocoena spp.,
+    Phocoenoides); Iniidae (Inia); Kogiidae (Kogia); Lipotidae (Lipotes); Pontoporiidae (Pontoporia)
+  SI: >
+    Sirenians (SI; Sea-Cows) including Trichechidae (Trichechus spp.); Dugongidae (Dugong)
+  PCW: >
+    Phocid carnivores in water (PCW) including Phocidae (Cystophora, Erignathus, Halichoerus,
+    Histriophoca, Hydrurga, Leptonychotes, Lobodon, Mirounga spp., Monachus, Neomonachus,
+    Ommatophoca, Pagophilus, Phoca spp., Pusa spp.)
+  OCW: >
+    Other marine carnivores in water (OCW) including Odobenidae (Odobenus); Otariidae
+    (Arctocephalus spp., Callorhinus, Eumetopias, Neophoca, Otaria, Phocarctos, Zalophus spp.);
+    Ursidae (Ursus maritimus); Mustelidae (Enhydra, Lontra feline)
+  ST: Sea Turtles
+
+
+
+  
+Mortality:
+  SPL:
+    Fish: 230
+    LF:  240
+    HF:  240
+    VHF: 240
+    SI:  240
+    PCW: 240
+    OCW: 240
+    ST:  240
+    
+  SEL:
+    Fish: .NAN
+    LF:  .NAN
+    HF:  .NAN
+    VHF: .NAN
+    SI:  .NAN
+    PCW: .NAN
+    OCW: .NAN
+    ST:  .NAN
+    
+    
+PTS:
+  SPL:
+    Fish: 203
+    LF:  219
+    HF:  230
+    VHF: 202
+    SI:  226
+    PCW: 218
+    OCW: 232
+    ST:  207
+    
+  SEL:
+    Fish: .NAN 
+    LF:  183
+    HF:  185
+    VHF: 155
+    SI:  190
+    PCW: 212
+    OCW: 203
+    ST:  210
+    
+
+
+TTS:
+  SPL:
+    Fish: 193
+    LF:  213
+    HF:  224
+    VHF: 196
+    SI:  220
+    PCW: 185
+    OCW: 226
+    ST:  .NAN
+    
+  SEL:
+    Fish: .NAN
+    LF:  168
+    HF:  170
+    VHF: 140
+    SI:  175
+    PCW: 170
+    OCW: 188
+    ST: .NAN
+    
+
+
+Behaviour:
+  SPLrms:
+    Fish: .NAN
+    LF:  160
+    HF:  160
+    VHF: 103
+    SI:  .NAN
+    PCW: 120
+    OCW: 160
+    ST:  175
+    
+
+EffectiveQuite:
+  SPL:
+    Fish: 143
+    LF: 163
+    HF: 150
+    VHF: 124
+    SI:  170
+    PCW: 174
+    OCW: 176
+    ST: .NAN   

@@ -27,6 +27,10 @@ Description:
     Other marine carnivores in water (OCW) including Odobenidae (Odobenus); Otariidae
     (Arctocephalus spp., Callorhinus, Eumetopias, Neophoca, Otaria, Phocarctos, Zalophus spp.);
     Ursidae (Ursus maritimus); Mustelidae (Enhydra, Lontra feline)
+  ST: Sea Turtles
+
+
+
   
 Mortality:
   SPL:
@@ -37,6 +41,7 @@ Mortality:
     SI:  240
     PCW: 240
     OCW: 240
+    ST:  240
     
   SEL:
     Fish: .NAN
@@ -46,6 +51,7 @@ Mortality:
     SI:  .NAN
     PCW: .NAN
     OCW: .NAN
+    ST:  .NAN
     
     
 PTS:
@@ -57,15 +63,17 @@ PTS:
     SI:  226
     PCW: 218
     OCW: 232
+    ST:  207
     
   SEL:
-    Fish: .NAN
+    Fish: .NAN 
     LF:  183
     HF:  185
-    VHF: 155
+    VHF: 181
     SI:  190
-    PCW: 202
+    PCW: 195
     OCW: 203
+    ST:  210
     
 
 
@@ -76,25 +84,41 @@ TTS:
     HF:  224
     VHF: 196
     SI:  220
-    PCW: 212
+    PCW: 185
     OCW: 226
+    ST:  .NAN
     
   SEL:
     Fish: .NAN
     LF:  168
     HF:  170
-    VHF: 140
+    VHF: 161
     SI:  175
-    PCW: 182
+    PCW: 175
     OCW: 188
+    ST: .NAN
     
 
 
 Behaviour:
   SPLrms:
-    HF:  .NAN
-    VHF: 100
+    Fish: .NAN
+    LF:  160
+    HF:  160
+    VHF: 103
     SI:  .NAN
-    PCW: 160
-    OCW: .NAN
+    PCW: 120
+    OCW: 160
+    ST:  175
     
+
+EffectiveQuite:
+  SPL:
+    Fish: 143
+    LF: 163
+    HF: 150
+    VHF: 124
+    SI:  170
+    PCW: 174
+    OCW: 176
+    ST: .NAN   

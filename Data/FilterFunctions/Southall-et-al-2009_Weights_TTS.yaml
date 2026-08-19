@@ -74,3 +74,28 @@ OCA:
   K:  156
   R2: 
   C:  1.39
+  
+ST:
+  f1: .NaN
+  f2: .NaN
+  a:  .NaN
+  B:  .NaN
+  K:  .NaN
+  R2: .NaN
+  C:  .NaN
+Fish:
+  f1: .NaN
+  f2: .NaN
+  a:  .NaN
+  B:  .NaN
+  K:  .NaN
+  R2: .NaN
+  C:  .NaN
+Human:
+  f1: .NaN
+  f2: .NaN
+  a:  .NaN
+  B:  .NaN
+  K:  .NaN
+  R2: .NaN
+  C:  .NaN
